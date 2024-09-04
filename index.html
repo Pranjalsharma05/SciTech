@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science and Technology Club - Home</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Marquee custom styles */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background: #f8f9fa;
+            color: #212529;
+            padding: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .marquee span {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Logo styles */
+        .club-logo {
+            max-height: 80px; /* Maintain the max height constraint */
+            width: 80px; /* Ensure the width is equal to the height to make it circular */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image covers the circle without distortion */
+            margin-right: 20px; /* Keep the margin to the right */
+        }
+        
+    </style>
 </head>
+
 <body>
     <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to the Science and Technology Club</h1>
-            <p class="lead">Exploring the frontiers of science and technology together.</p>
+        <div class="container d-flex align-items-center justify-content-center">
+            <img src="assets/club-logo.png" alt="Science and Technology Club Logo" class="club-logo">
+            <div>
+                <h1>Welcome to the Science and Technology Club</h1>
+                <p class="lead">'ज्ञानम् विज्ञानसंगीतम्' <br>'The Harmony of Knowledge and Science.'</p>
+            </div>
         </div>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SciTech Club</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="assets/club-logo.png" alt="Club Logo" class="club-logo">
+                SciTech Club
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,54 +73,103 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link"href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <section class="mb-5">
-            <h2>Highlights</h2>
-            <p>Check out our latest events, workshops, and projects!</p>
-            <!-- Add links, cards, or images here -->
-        </section>
+    <!-- Marquee Section -->
+    <div class="marquee">
+        <span>Upcoming Events: Workshop on AI - Sept 10 | Robotics Competition - Sept 15 | Hackathon - Sept 25 | Guest Lecture on Quantum Computing - Oct 1</span>
+    </div>
 
+    <!-- Slider Section -->
+    <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="events/event1.jpg" class="d-block w-100" alt="Event 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Event 1: AI Workshop</h5>
+                    <p>Join us for an exciting workshop on Artificial Intelligence.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="events/event2.jpg" class="d-block w-100" alt="Event 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Event 2: Robotics Competition</h5>
+                    <p>Showcase your robotics skills at our annual competition.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="events/event3.jpg" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Event 3: Hackathon</h5>
+                    <p>Collaborate with peers to solve challenging problems.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="container my-5">
+
+        <section class="mb-5">
+            <h2>Objectives of the Club</h2>
+            <p>The Science and Technology Club aims to foster a community of innovation and learning. Our objectives include:</p>
+            <ul>
+                <li><strong>Promoting Innovation:</strong> Encourage students to think creatively and develop innovative solutions to real-world problems.</li>
+                <li><strong>Knowledge Sharing:</strong> Create a platform for students to share their knowledge and skills in various domains of science and technology.</li>
+                <li><strong>Practical Learning:</strong> Organize workshops, seminars, and hands-on sessions to enhance practical knowledge and technical skills.</li>
+                <li><strong>Collaboration:</strong> Facilitate collaboration between students, faculty, and industry professionals to work on exciting projects and research.</li>
+                <li><strong>Leadership Development:</strong> Develop leadership skills by providing opportunities to lead projects, teams, and club activities.</li>
+                <li><strong>Career Guidance:</strong> Provide guidance and support for students interested in pursuing careers in science and technology fields.</li>
+            </ul>
+        </section>
+    
+       
         <section>
+            <h2 class="mb-4">Gallery</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="events\event1.jpg" class="card-img-top" alt="Event 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 1</h5>
-                            <p class="card-text">A brief description of Event 1.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="events/event1.jpg" class="img-fluid" alt="Event 1">
+                        <p class="mt-2">A brief description of Event 1.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="events\event2.jpg" class="card-img-top" alt="Event 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 2</h5>
-                            <p class="card-text">A brief description of Event 2.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="events/event2.jpg" class="img-fluid" alt="Event 2">
+                        <p class="mt-2">A brief description of Event 2.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="events\event3.jpg" class="card-img-top" alt="Event 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 3</h5>
-                            <p class="card-text">A brief description of Event 3.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="events/event3.jpg" class="img-fluid" alt="Event 3">
+                        <p class="mt-2">A brief description of Event 3.</p>
                     </div>
                 </div>
             </div>
+            
         </section>
+        
+        <style>
+            .gallery-item img {
+                width: 100%;
+                height: auto; /* Maintain aspect ratio */
+                border-radius: 8px; /* Optional: Add rounded corners */
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add shadow for depth */
+            }
+        </style>
+        
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
@@ -92,4 +187,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

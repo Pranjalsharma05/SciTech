@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Science and Technology Club</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom style for circular avatar */
+        .avatar {
+            border-radius: 50%;
+            width: 120px; /* Adjust the size as needed */
+            height: 120px; /* Adjust the size as needed */
+            object-fit: cover; /* Ensure the image covers the circle without distortion */
+        }
+
+        .leader-info {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
 </head>
+
 <body>
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
@@ -18,7 +34,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">SciTech Club</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,7 +44,7 @@
                     <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -37,37 +54,73 @@
     <main class="container my-5">
         <section class="mb-5">
             <h2>Club Overview</h2>
-            <p>The Science and Technology Club is dedicated to fostering a passion for science and technology among students. We provide a platform for members to explore, innovate, and collaborate on various scientific and technological projects.</p>
+            <p>The Science and Technology Club was founded in [Year] with the aim of fostering a passion for science and technology among students. Our club is committed to providing a platform where members can engage in various scientific and technological endeavors, collaborate on innovative projects, and gain valuable experience.</p>
+            <p><strong>Objectives:</strong></p>
+            <ul>
+                <li>To encourage students to explore and pursue careers in science and technology.</li>
+                <li>To provide hands-on experience with advanced technology and scientific tools.</li>
+                <li>To support and mentor students in their projects and research.</li>
+                <li>To create opportunities for networking with professionals and peers in the field.</li>
+            </ul>
+            <p><strong>Focus Areas:</strong></p>
+            <ul>
+                <li><strong>e-Yantra:</strong> Engaging in robotics projects and competitions to enhance practical skills.</li>
+                <li><strong>Electronics:</strong> Exploring various electronic devices and systems through experiments and projects.</li>
+                <li><strong>Computer Science:</strong> Delving into programming, software development, and computational theory.</li>
+                <li><strong>Environmental Science:</strong> Addressing environmental issues through technological solutions and research.</li>
+                <li><strong>Other Areas:</strong> Exploring other emerging fields of science and technology based on members' interests.</li>
+            </ul>
         </section>
 
         <section class="mb-5">
             <h2>Our Team</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Leader 1</h5>
-                            <p class="card-text">President of the Science and Technology Club. Leading the club towards innovation.</p>
-                        </div>
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="President">
+                        <h5 class="mt-2">President</h5>
+                        <p>President of the Science and Technology Club. Leading the club towards innovation.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="leader2.jpg" class="card-img-top" alt="Leader 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Leader 2</h5>
-                            <p class="card-text">Vice President, focusing on robotics and AI projects.</p>
-                        </div>
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="Secretary">
+                        <h5 class="mt-2">Secretary</h5>
+                        <p>Vice President, focusing on robotics and AI projects.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="leader3.jpg" class="card-img-top" alt="Leader 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Leader 3</h5>
-                            <p class="card-text">Secretary, managing club events and workshops.</p>
-                        </div>
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="Treasurer">
+                        <h5 class="mt-2">Treasurer</h5>
+                        <p>Secretary, managing club events and workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Faculty Coordinators</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="Coordinator 1">
+                        <h5 class="mt-2">Dr. JP Sharma</h5>
+                        <p>Faculty Coordinator for academic programs, guiding research and development.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="Coordinator 2">
+                        <h5 class="mt-2">Er. Shivani Rana</h5>
+                        <p>Faculty Coordinator for workshops and seminars, ensuring high-quality events.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="leader-info">
+                        <img src="assets/leader1.avif" class="avatar" alt="Coordinator 3">
+                        <h5 class="mt-2">Dr. Vaihnav Kiran</h5>
+                        <p>Faculty Coordinator for student engagement and mentorship.</p>
                     </div>
                 </div>
             </div>
@@ -94,4 +147,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
