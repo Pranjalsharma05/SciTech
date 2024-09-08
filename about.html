@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Science and Technology Club</title>
+    <link rel="icon" href="assets/clublogos/club-logo-withbackground.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        
+            body {
+                font-family: Arial, sans-serif;
+                
+                color: #333;
+                background-color: #f0f8ff; /* Light blue background for the page */
+            }
+           
+       
         /* Custom style for circular avatar */
         .avatar {
             border-radius: 50%;
@@ -19,6 +29,46 @@
         .leader-info {
             text-align: center;
             margin-top: 15px;
+        }
+        .flowchart {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .node {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #007bff; /* Blue border color */
+            border-radius: 8px;
+            position: relative;
+            background-color: #e7f0ff; /* Light blue background for nodes */
+            color: #004085; /* Dark blue text color */
+        }
+        .node::before,
+        .node::after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .children > .node {
+            margin: 0 20px;
+        }
+        .advisory-board {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .advisory-board > .node {
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -98,7 +148,6 @@
                 </div>
             </div>
         </section>
-
         <section class="mb-5">
             <h2>Faculty Coordinators</h2>
             <div class="row">
@@ -106,31 +155,171 @@
                     <div class="leader-info">
                         <img src="assets/leader1.avif" class="avatar" alt="Coordinator 1">
                         <h5 class="mt-2">Dr. JP Sharma</h5>
-                        <p>Faculty Coordinator for academic programs, guiding research and development.</p>
+                        <p>Faculty Coordinator from the Department of Physics, overseeing academic programs and guiding research and development.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="leader-info">
                         <img src="assets/leader1.avif" class="avatar" alt="Coordinator 2">
                         <h5 class="mt-2">Er. Shivani Rana</h5>
-                        <p>Faculty Coordinator for workshops and seminars, ensuring high-quality events.</p>
+                        <p>Faculty Coordinator from the Department of Computer Science and Engineering, responsible for organizing workshops and seminars, ensuring high-quality events.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="leader-info">
                         <img src="assets/leader1.avif" class="avatar" alt="Coordinator 3">
-                        <h5 class="mt-2">Dr. Vaihnav Kiran</h5>
-                        <p>Faculty Coordinator for student engagement and mentorship.</p>
+                        <h5 class="mt-2">Dr. Vaishnav Kiran</h5>
+                        <p>Faculty Coordinator from the Department of Environmental Science, focusing on student engagement and mentorship.</p>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <section>
             <h2>Our Facilities</h2>
             <p>We have access to cutting-edge labs and equipment, including robotics labs, AI workstations, and a digital electronics lab. These resources enable our members to work on advanced projects and experiments.</p>
         </section>
     </main>
+
+
+
+
+
+
+   
+
+
+    <h1>Club Leadership Flowchart</h1>
+    <div class="flowchart">
+        <div class="node">
+            <h4>President</h4>
+            <p>Senior Class, Engineering Wing</p>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Vice President 1</h4>
+                <p>Engineering Wing</p>
+            </div>
+            <div class="node">
+                <h4>Vice President 2</h4>
+                <p>Applied Sciences Wing</p>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Secretary</h4>
+                <p>Engineering and Applied Sciences</p>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Joint Secretaries (6)</h4>
+                <div class="children">
+                    <div class="node">
+                        <p>2 from B.Tech.</p>
+                    </div>
+                    <div class="node">
+                        <p>2 from MCA</p>
+                    </div>
+                    <div class="node">
+                        <p>1 from M.Tech.</p>
+                    </div>
+                    <div class="node">
+                        <p>1 from Applied Sciences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Treasurer</h4>
+                <p>Engineering and Applied Sciences</p>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Executive Members (5)</h4>
+                <div class="children">
+                    <div class="node">
+                        <p>1 from MCA</p>
+                    </div>
+                    <div class="node">
+                        <p>2 from B.Tech.</p>
+                    </div>
+                    <div class="node">
+                        <p>1 from M.Tech.</p>
+                    </div>
+                    <div class="node">
+                        <p>1 from Applied Sciences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Advisory Board Flowchart</h1>
+    <div class="flowchart">
+        <div class="advisory-board">
+            <div class="children">
+                <div class="node">
+                    <h4>Dean</h4>
+                    <p>University Schools of Studies</p>
+                </div>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Finance Officer</h4>
+            </div>
+            <div class="node">
+                <h4>Deputy Registrar</h4>
+            </div>
+            <div class="node">
+                <h4>Estate Officer</h4>
+            </div>
+            <div class="node">
+                <h4>Project Officer</h4>
+            </div>
+        </div>
+    </div>
+
+    <h1>Faculty</h1>
+    <div class="flowchart">
+        <div class="advisory-board">
+            <div class="children">
+                <div class="node">
+                    <h4>Dr. J.P. Sharma</h4>
+                    <p>Faculty Coordinator<br>Applied Sciences (Physics)</p>
+                </div>
+            </div>
+        </div>
+        <div class="children">
+            <div class="node">
+                <h4>Er. Shivani Rana</h4>
+                <p>Faculty Co-Coordinator<br>Department of CSE</p>
+            </div>
+            <div class="node">
+                <h4>Er. Neha Dhiman</h4>
+                <p>Faculty Co-Coordinator<br>Department of CSE</p>
+            </div>
+            <div class="node">
+                <h4>Sh. Akshay Patyal</h4>
+                <p>Faculty Co-Coordinator<br>Applied Sciences (Mathematics)</p>
+            </div>
+            <div class="node">
+                <h4>Sh. Jagat Ram</h4>
+                <p>Faculty Co-Coordinator<br>Applied Sciences (Physics)</p>
+            </div>
+            <div class="node">
+                <h4>Mr. Abhinav Jamwal</h4>
+                <p>Faculty Co-Coordinator<br>Applied Sciences (Environmental Sci.)</p>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
