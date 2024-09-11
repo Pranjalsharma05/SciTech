@@ -30,6 +30,45 @@
             border-radius: 8px;
             margin-bottom: 10px;
         }
+        /* Navbar styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #ddd;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active page style */
+.navbar-nav .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid #17a2b8; /* Bootstrap info color */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    border-bottom: 3px solid #17a2b8;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        padding: 15px;
+    }
+}
     </style>
 </head>
 <body>
@@ -42,19 +81,41 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SciTech Club</a>
+            <a class="navbar-brand" href="#">
+              
+            
+                <span>SciTech Club</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html">Science Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>

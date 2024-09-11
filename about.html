@@ -70,6 +70,53 @@
         .advisory-board > .node {
             margin: 0 5px;
         }
+               /* Navbar brand logo */
+/* Header logo styling */
+.club-logo {
+    height: 200px; /* Adjust the height as needed */
+    margin-right: 20px; /* Add spacing between the logo and text */
+}
+
+
+/* Navbar styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #ddd;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active page style */
+.navbar-nav .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid #17a2b8; /* Bootstrap info color */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    border-bottom: 3px solid #17a2b8;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        padding: 15px;
+    }
+}
     </style>
 </head>
 
@@ -83,19 +130,41 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SciTech Club</a>
+            <a class="navbar-brand" href="#">
+              
+            
+                <span>SciTech Club</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html">Science Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -140,22 +209,22 @@
     <div class="flowchart">
         <div class="node">
             <h4>President</h4>
-            <p>Mr.Sajid Ansari</p>
+            
         </div>
         <div class="children">
             <div class="node">
                 <h4>Vice President </h4>
-                <p>Faculty Co-Coordinator<br>(Engineering Wing)</p>
+               
             </div>
             <div class="node">
                 <h4>Vice President </h4>
-                <p> Ms.Nikita Sharma<br>(Science Wing) </p>
+                
             </div>
         </div>
         <div class="children">
             <div class="node">
                 <h4>Secretary</h4>
-                <p>Mr.Pranjal Sharma</p>
+               
             </div>
         </div>
         <div class="children">
@@ -163,38 +232,23 @@
                 <h4>Joint Secretaries </h4>
                 <div class="children">
                     <div class="node">
-                        <p>Mr.Aditya
-                            Thakur
-                            <br>
-                            (Engineering Wing)</p>
+                        <p>
+                            Joint Secretaries 1</p>
                     </div>
                     <div class="node">
-                        <p>Mr.Mridul<br>
-                            (Engineering Wing)</p>
+                        <p>
+                            Joint Secretaries 2</p>
                     </div>
-                    <div class="node">
-                        <p>Mr.Advait Kaushal<br>
-                            (Engineering Wing)</p>
-                    </div>
-                    <div class="node">
-                        <p>Mr.Ayush<br>
-                            (Engineering Wing) </p>
-                    </div>
-                    <div class="node">
-                        <p>Mr. Karan Sharma<br>
-                            (Science Wing) </p>
-                    </div>
-                    <div class="node">
-                        <p>Ms.Vanshita Mahajan<br>
-                            (Engineering Wing) </p>
-                    </div>
+                   
+                    
+                   
                 </div>
             </div>
         </div>
         <div class="children">
             <div class="node">
                 <h4>Treasurer</h4>
-                <p>Mr.Abhishek Kumar</p>
+                
             </div>
         </div>
         <div class="children">
@@ -202,29 +256,23 @@
                 <h4>Executive Members </h4>
                 <div class="children">
                     <div class="node">
-                        <p>Ms.Akrshita Sharma<br>
-                            (Engineering Wing)</p>
+                        <p>Executive Member 1
+                            </p>
                     </div>
                     <div class="node">
-                        <p>Ms.  
-                            Nikita
-                            <br>
-                            (Engineering Wing)</p>
+                        <p>
+                            Executive Member 2</p>
                     </div>
                     <div class="node">
-                        <p>Mr.Prateek Vashishat<br>
-                            (Engineering Wing)</p>
+                        <p>
+                            Executive Member 3</p>
                     </div>
                     <div class="node">
-                        <p>Mr.Sahil<br>
-                            (Science Wing) </p>
+                        <p>
+                            Executive Member 4</p>
                     </div>
-                    <div class="node">
-                        <p> Ms.Komal<br>(Science Wing) </p>
-                    </div>
-                    <div class="node">
-                        <p> Ms. Mehak<br>(Science Wing) </p>
-                    </div>
+
+                   
                 </div>
             </div>
         </div>
@@ -266,8 +314,8 @@
         <div class="advisory-board">
             <div class="children">
                 <div class="node">
-                    <h4>Dr. J.P. Sharma</h4>
-                    <p>Faculty Coordinator<br>School of Basic & Applied Sciences</p>
+                    <h4>Faculty Coordinator</h4>
+                    
                 </div>
             </div>
         </div>
@@ -276,25 +324,14 @@
                 <h4>Faculty Co-Coordinators</h4>
             <div class="children">
             <div class="node">
-                <h4>Er. Shivani Rana</h4>
-                <p>Department of CSE</p>
+                <h4>Faculty Coordinator 1</h4>
+                
             </div>
             <div class="node">
-                <h4>Er. Neha Dhiman</h4>
-                <p>Department of CSE</p>
+                <h4>Faculty Coordinator 2</h4>
+               
             </div>
-            <div class="node">
-                <h4>Sh. Akshay Patyal</h4>
-                <p>Applied Sciences (Mathematics)</p>
-            </div>
-            <div class="node">
-                <h4>Sh. Jagat Ram</h4>
-                <p>Applied Sciences (Physics)</p>
-            </div>
-            <div class="node">
-                <h4>Mr. Abhinav Jamwal</h4>
-                <p>Applied Sciences (Environmental Sci.)</p>
-            </div>
+           
         </div>
         </div>
     
